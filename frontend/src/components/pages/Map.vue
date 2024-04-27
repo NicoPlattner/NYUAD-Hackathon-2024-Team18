@@ -8,9 +8,11 @@
 import { ref, onMounted } from 'vue';
 import "leaflet/dist/leaflet.css";
 import * as L from 'leaflet';
+import eventBus from "@/eventBus.js";
 
 const initialMap = ref(null);
 let geoJson = null;
+let features = [];
 
 
 function getColor(d) {
@@ -85,6 +87,10 @@ onMounted(async ()=> {
     initialMap.value.fitBounds(e.target.getBounds());
   }
 
+  eventBus.$on('citySelected', (city) => {
+    zoomToFeature({target: Object.values(geoJson._layers).filter(f => f.feature.properties.ID_1 === parseInt(city))[0]})
+  })
+
   function onEachFeature(feature, layer) {
     layer.on({
       mouseover: highlightFeature,
@@ -102,9 +108,9 @@ onMounted(async ()=> {
       onEachFeature: onEachFeature
     }).addTo(initialMap.value);
 
+    console.log(geoJson)
     info.addTo(initialMap.value);
-
-    console.log(data);
+    features = data.features;
   } else {
     console.error('Failed to load GeoJSON data');
   }
