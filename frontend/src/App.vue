@@ -15,4 +15,9 @@ import Layout from "@/components/layout/Layout.vue";
   padding: 0;
 }
 
+html {
+  width: 100dvw;
+  overflow-x: hidden;
+}
+
 </style>

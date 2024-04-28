@@ -10,12 +10,12 @@ export default {
 </script>
 
 <template>
-  <div style="">
-    <img style="z-index: -3; width: 100%; opacity:0.5; position: absolute; top: 0; left:0" src="/e135931e-e775-49cd-9768-ac9e74cfe684.png">
+  <div>
+    <img style="z-index: -3; width: 100%; opacity:0.5; position: absolute; top: 10vh; left:0; min-width: 100vh; min-height: 1000px" src="/e135931e-e775-49cd-9768-ac9e74cfe684.png">
 
-    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
-      <img src="/sayllogo-removebg.png" alt="Your Logo" style="width: 55rem; " />
-      <p style="margin-bottom: 50px; font-family: Roboto; font-size: 3rem; margin-top: -7rem">Forecasting Floods, Safeguarding Futures.</p>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center">
+      <img id="mainLogo" src="/sayllogo-removebg.png" alt="Your Logo" style="width: 55rem; margin-bottom: 5rem; max-width: 90%" />
+      <p id="slogan" style="margin-bottom: 70px; font-family: 'Bubblegum Sans'; color: #304564;">Forecasting Floods, Safeguarding Futures.</p>
     </div>
     <div style="display: flex; flex-direction: column; align-items: center; ">
 
@@ -35,4 +35,25 @@ export default {
 </template>
 
 <style scoped>
+@media screen and (min-width: 320px) {
+  #mainLogo {
+    margin-top: 5rem;
+  }
+
+  #slogan {
+    font-size: 3rem;
+    -webkit-text-stroke: 1px white; margin-top: -3rem
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #mainLogo {
+    margin-top: 0;
+  }
+
+  #slogan {
+    font-size: 5rem;
+    -webkit-text-stroke: 2px white; margin-top: -7rem
+  }
+}
 </style>
