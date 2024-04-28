@@ -82,6 +82,12 @@ onMounted(async ()=> {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(initialMap.value);
 
+  await fetch('https://nyuad-hackathon-2024-team18.onrender.com/read_csv')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+  })
+
 
   function zoomToFeature(e) {
     initialMap.value.fitBounds(e.target.getBounds());
