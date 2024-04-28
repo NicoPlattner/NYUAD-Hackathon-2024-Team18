@@ -51,6 +51,10 @@ export default {
     document.getElementById('regionSelect').addEventListener('change', (e) => {
       eventBus.$emit('citySelected', e.target.value)
     })
+
+    document.getElementById('dateSelect').addEventListener('change', (e) => {
+      eventBus.$emit('dateSelected', e.target.value)
+    })
   }
 };
 </script>
