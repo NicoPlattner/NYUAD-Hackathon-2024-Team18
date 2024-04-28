@@ -1,0 +1,29 @@
+date,region,probability
+29.04.2024,Abu Dhabi,0.03
+29.04.2024,Ajman,0
+29.04.2024,Dubai,0.05
+29.04.2024,Fujairah,0.02
+29.04.2024,Ras Al Khaimah,0.1
+29.04.2024,Sharjah,0.04
+29.04.2024,Umm Al Quwain,0.02
+30.04.2024,Abu Dhabi,0.05
+30.04.2024,Ajman,0
+30.04.2024,Dubai,0.07
+30.04.2024,Fujairah,0.01
+30.04.2024,Ras Al Khaimah,0.01
+30.04.2024,Sharjah,0.03
+30.04.2024,Umm Al Quwain,0.04
+01.05.2024,Abu Dhabi,0.1
+01.05.2024,Ajman,0.07
+01.05.2024,Dubai,0.01
+01.05.2024,Fujairah,0.1
+01.05.2024,Ras Al Khaimah,0.04
+01.05.2024,Sharjah,0.02
+01.05.2024,Umm Al Quwain,0.05
+01.06.2024,Abu Dhabi,0.85
+01.06.2024,Ajman,0.32
+01.06.2024,Dubai,0.71
+01.06.2024,Fujairah,0.9
+01.06.2024,Ras Al Khaimah,0.51
+01.06.2024,Sharjah,0.66
+01.06.2024,Umm Al Quwain,0.82
